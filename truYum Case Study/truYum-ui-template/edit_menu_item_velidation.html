@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Truyum Case Study</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expend-lg bg-danger navbar-dark ml-auto">
+        <a class="navbar-brand text-white ml-2" href="#"><i class="material-icons mr-2">local_dining</i><b>truYum</b></a>
+       
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <!-- Navbar links -->
+       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link" href="#">Menu Items</a>
+           </li>
+           
+         </ul>
+       </div>
+     </nav>
+<!--div class ="container">
+   <h1><center>Hello World</center></h1>
+</div-->
+<section class="container">
+    <div class="row">
+        <div class="col-12 p-2">
+            <h1 class="display-3">
+                Edit Menu Items
+            </h1>
+        </div>
+    </div>
+  <form action="">
+    <div class="row p-0">
+      <div class="col-12 p-2">
+        <div class="form-group">
+          <label for="title">Item Name</label>
+          <input type="text" name="title" id="title" class="form-control" />
+          <div class="text-danger">
+            Input Name is Required<br/>
+            Input Name cannot exceed 200 characters
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row p-0">
+      <div class="col-12 col-lg-3 p-2">
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input
+            type="number"
+            name="price"
+            id="price"
+            class="form-control"
+            step="1"
+          />
+          <div class="text-danger">
+            Price is Required<br/>
+            Price can only contain numbers
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 p-2">
+        <div class="form-group">
+          <label for="dateOfLaunch">Date Of Launch</label>
+          <input
+            type="text"
+            class="form-control"
+            name="dateOfLaunch"
+            id="dateOfLaunch"
+            placeholder="dd/mm/yyyy"
+            required
+          />
+          <div class="text-danger">
+              Incorrect date format
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 p-2">
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select name="category" id="category" class="form-control" required>
+                <option value="Main Course">Main Course</option>
+                <option value="Stater">Stater</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+            <div class="text-danger">
+                Select atleast one list item
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-lg-3 p-2">
+        <div class="form-group">
+          <label for="active">Active</label><br />
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="active"
+              id="activeYes"
+              value="male"
+              required
+            />Yes</label
+          >
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="active"
+              id="activeNo"
+              value="female"
+              required
+            />No</label
+          >
+          <div class="text-danger">
+            Select in stock status
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row p-0">
+        <div class="col-12 p-2">        
+            <label class="checkbox-inline"><input type="checkbox" name="freeDelivery" id="freeDelivery" value="true"> Free Delivery</label>
+        </div>
+    </div>
+    <div class="row p-0">
+        <div class="col-12 p-2">
+            <input type="submit" value="Save" class="btn text-white" style="background-color: brown;">
+        </div>
+    </div>
+  </form>
+</section>
+
+<div class="footer">
+    <p>Copyright 2019</p>
+</div>
+</body>
+</html> 
